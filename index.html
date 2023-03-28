@@ -18,6 +18,13 @@
     <title>My Simple Store</title>
 
 
+    <!--Data Layer-->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+
+
+
     <!-- Meta Pixel Code -->
     <script>
         !function(f,b,e,v,n,t,s)
@@ -60,8 +67,12 @@
                 <li><a style="color: white;" href="./index.html" class="under">HOME</a></li>
                 <li><a style="color: white;"href="#" class="under">SHOP</a></li>
                 <li><a style="color: white;" href="#" class="under">OUR PRODUCTS</a></li>
-                <li><a style="color: white;" href="./ContactUs/index.html" class="under">CONTACT US</a></li>
-                <li><a style="color: white;" href="./AboutUs/index.html" class="under">ABOUT US</a></li>
+                <li><a style="color: white;" href="./ContactUs/index.html" class="under" onclick="dataLayer.push({
+                    'event':'contact us'
+                });">CONTACT US</a></li>
+                <li><a style="color: white;" href="./AboutUs/index.html" class="under" onclick="dataLayer.push({
+                    'event':'about us'
+                });">ABOUT US</a></li>
             </ul>
         </div>
         <div class="search">

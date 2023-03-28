@@ -19,7 +19,12 @@
     <link rel="stylesheet" href="styles.css" />
 
     <title>contact us</title>
+      
 
+    <!--Data Layer-->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+    </script>
 
     <!-- Meta Pixel Code -->
     <script>
@@ -63,19 +68,19 @@
               
               <li>
                 <p class="left">
-                  <label for="first_name">first name</label>
-                  <input type="text" name="first_name" placeholder="John" />
+                  <label for="first_name" >first name</label>
+                  <input type="text" name="first_name" placeholder="John" id="first_name"/>
                 </p>
                 <p class="left">
-                  <label for="last_name">last name</label>
-                  <input type="text" name="last_name" placeholder="Smith" />      
+                  <label for="last_name" >last name</label>
+                  <input type="text" name="last_name" placeholder="Smith" id="last_name"/>      
                 </p>
               </li>
               
               <li>
                 <p>
-                  <label for="email">email <span class="req">*</span></label>
-                  <input type="email" name="email" placeholder="john.smith@gmail.com" />
+                  <label for="email" >email <span class="req">*</span></label>
+                  <input type="email" name="email" placeholder="john.smith@gmail.com" id="email_id"/>
                 </p>
               </li>        
               <li><div class="divider"></div></li>
@@ -85,7 +90,12 @@
               </li>
               
               <li>
-                <input class="btn btn-submit" type="submit" value="Submit" />
+                <input class="btn btn-submit" type="submit" value="Submit" onclick="dataLayer.push({
+                  'event': 'Submit Contact',
+                  'first_name': document.getElementById('first_name').value,
+                  'last_name': document.getElementById('last_name').value,
+                  'email': document.getElementById('email_id').value
+                });" />
                 <small>or press <strong>enter</strong></small>
               </li>
               

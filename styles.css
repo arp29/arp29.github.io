@@ -101,7 +101,7 @@
      width:30px;
      height:30px;
      background-color: white;
-     color:black;
+     color:rgb(246, 230, 230);
     
 }
 
@@ -400,8 +400,7 @@ footer {
 }
 
 .menu {
-    visibility:hidden;
-   
+    visibility: hidden;
 }
 
 .heading1 .ham:active {
@@ -446,6 +445,7 @@ footer {
         display:flex;
         flex-direction: column;
         align-items: center;
+        visibility: visible;
        
    }
 

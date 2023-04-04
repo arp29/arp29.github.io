@@ -20,10 +20,12 @@
     <title>My Simple Store</title>
 
 
-    <!--Data Layer-->
     <script>
-        window.dataLayer = window.dataLayer || [];
-    </script>
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+       'event': 'page_viewed'
+       });
+      </script>
 
 
 
